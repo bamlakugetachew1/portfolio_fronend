@@ -8,18 +8,24 @@ import { useState } from "react";
 import CircularProgress from "@mui/joy/CircularProgress";
 const Home = () => {
   const [loading, setLoading] = useState(false);
-  const [progress, setProgress] = useState(1);
+  const [progress, setProgress] = useState(0);
   function download() {
     setLoading(true);
     axios({
       url: "https://portfolio-backend-ubkm.onrender.com/api/posts/download",
       method: "GET",
       responseType: "blob",
-      onDownloadProgress: (progressEvent) => {
-        let percentCompleted = Math.round(
+     onDownloadProgress: progressEvent => {
+        const percentage = Math.round(
           (progressEvent.loaded * 100) / progressEvent.total
         );
-        setProgress(percentCompleted);
+        console.log(percentage);
+        setProgress(percentage);
+        if (percentage === 100) {
+          setTimeout(() => {
+            setLoading(false);
+          }, 400);
+        }
       },
     })
       .then((response) => {
