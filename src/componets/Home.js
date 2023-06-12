@@ -16,6 +16,8 @@ const Home = () => {
       method: "GET",
       responseType: "blob",
      onDownloadProgress: progressEvent => {
+                console.log(progressEvent)
+
         const percentage = Math.round(
           (progressEvent.loaded * 100) / progressEvent.total
         );
