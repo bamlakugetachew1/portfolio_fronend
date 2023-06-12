@@ -83,7 +83,7 @@ const Home = () => {
               Resume
             </Button>
             {loading && (
-              <CircularProgress variant="determinate" value={progress}>
+              <CircularProgress determinate value={progress}>
                 {progress}
               </CircularProgress>
             )}
