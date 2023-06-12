@@ -19,7 +19,7 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
     axios
-      .post("http://localhost:4000/api/posts/create", {
+      .post("https://portfolio-backend-ubkm.onrender.com/api/posts/create", {
         name: name,
         email: email,
         message: message,
