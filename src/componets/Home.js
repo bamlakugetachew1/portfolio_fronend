@@ -19,6 +19,7 @@ const Home = () => {
         let percentCompleted = Math.round(
           (progressEvent.loaded * 100) / progressEvent.total
         );
+        console.log(percentCompleted);
         setProgress(percentCompleted);
       },
     })
