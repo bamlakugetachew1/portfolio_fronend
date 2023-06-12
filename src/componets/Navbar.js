@@ -7,7 +7,7 @@ const Navbar = () => {
   const [activepage, setActivepage] = useState("homepage");
   const [mobilemenu, setMobilemenu] = useState(true);
   let url = window.location.href;
-  url = url.slice(21, url.length);
+  url = url.slice(35, url.length);
 
   useEffect(() => {
     seturl();
