@@ -37,12 +37,11 @@ const Navbar = () => {
     }
   }
   return (
-    <div  onClick={() => {
-                changeactivepage("homepage");
-              }}
-className="flex justify-between hover:cursor-pointer text-lg">
+    <div className="flex justify-between hover:cursor-pointer text-lg">
       <div className="text-[#f37e8a]">
-        <Link to="/">Bamlaku</Link>
+        <Link to="/" onClick={() => {
+                changeactivepage("homepage");
+              }}>Bamlaku</Link>
       </div>
       <div className="md:hidden">
         <div className="flex justify-end" onClick={Changemobilemenu}>
