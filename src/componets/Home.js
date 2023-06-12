@@ -8,7 +8,7 @@ import { useState } from "react";
 import CircularProgress from "@mui/joy/CircularProgress";
 const Home = () => {
   const [loading, setLoading] = useState(false);
-  const [progress, setProgress] = useState(0);
+  const [progress, setProgress] = useState(1);
   function download() {
     setLoading(true);
     axios({
@@ -24,7 +24,7 @@ const Home = () => {
         if (percentage === 100) {
           setTimeout(() => {
             setLoading(false);
-          }, 400);
+          }, 1000);
         }
       },
     })
@@ -83,7 +83,7 @@ const Home = () => {
               Resume
             </Button>
             {loading && (
-              <CircularProgress determinate value={progress}>
+                <CircularProgress determinate value={progress}>
                 {progress}
               </CircularProgress>
             )}
