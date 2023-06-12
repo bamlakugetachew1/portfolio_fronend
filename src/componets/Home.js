@@ -12,7 +12,7 @@ const Home = () => {
   function download() {
     setLoading(true);
     axios({
-      url: "http://localhost:4000/api/posts/download",
+      url: "https://portfolio-backend-ubkm.onrender.com/api/posts/download",
       method: "GET",
       responseType: "blob",
       onDownloadProgress: (progressEvent) => {
