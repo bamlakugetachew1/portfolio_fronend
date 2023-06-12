@@ -19,7 +19,6 @@ const Home = () => {
         const percentage = Math.round(
           (progressEvent.loaded * 100) / progressEvent.total
         );
-        console.log(percentage);
         setProgress(percentage);
         if (percentage === 100) {
           setTimeout(() => {
