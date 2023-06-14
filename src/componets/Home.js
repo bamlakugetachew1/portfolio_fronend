@@ -3,43 +3,8 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Typed from "react-typed";
 import Button from "@mui/material/Button";
 import DownloadIcon from "@mui/icons-material/Download";
-import axios from "axios";
-import { useState } from "react";
-import CircularProgress from "@mui/joy/CircularProgress";
+import docx from "../bamlaku.docx";
 const Home = () => {
-  const [loading, setLoading] = useState(false);
-  const [progress, setProgress] = useState(1);
-  function download() {
-    setLoading(true);
-    axios({
-      url: "https://portfolio-backend-ubkm.onrender.com/api/posts/download",
-      method: "GET",
-      responseType: "blob",
-     onDownloadProgress: progressEvent => {
-       const percentage = Math.round(
-          (progressEvent.loaded * 100) / progressEvent.total
-        );
-        setProgress(percentage);
-        if (percentage === 100) {
-          setTimeout(() => {
-            setLoading(false);
-          }, 1000);
-        }
-      },
-    })
-      .then((response) => {
-        var fileURL = window.URL.createObjectURL(new Blob([response.data]));
-        var fURL = document.createElement("a");
-        fURL.href = fileURL;
-        fURL.setAttribute("download", "bamlaku.docx");
-        document.body.appendChild(fURL);
-        fURL.click();
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }
   return (
     <div className="absolute top-1/2 -translate-y-1/2 mt-7">
       <div className="md:flex-row flex flex-col md:gap-40 lg:gap-80">
@@ -74,18 +39,16 @@ const Home = () => {
             </a>
           </div>
           <div className="flex gap-3">
-            <Button
-              onClick={download}
-              variant="outlined"
-              endIcon={<DownloadIcon />}
+            <a
+              href={docx}
+              download="bamlaku_resume"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Resume
-            </Button>
-            {loading && (
-                <CircularProgress determinate value={progress}>
-                {progress}
-              </CircularProgress>
-            )}
+              <Button variant="outlined" endIcon={<DownloadIcon />}>
+                Resume
+              </Button>
+            </a>
           </div>
         </div>
         <div className="mt-2 md:mt-0 moverightleft1">
