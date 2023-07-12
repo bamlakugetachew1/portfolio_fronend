@@ -9,7 +9,7 @@ const Home = () => {
     <div className="absolute top-1/2 -translate-y-1/2 mt-7">
       <div className="md:flex-row flex flex-col md:gap-40 lg:gap-80">
         <div>
-          <h3 className="text-2xl md:text-3xl movelefttright">
+          <h3 className="text-2xl mt-2 md:text-3xl movelefttright">
             Hi,👋<br></br> I Am <span className="text-[#f5adb9]">Bamlaku</span>{" "}
             <span className="text-[#f37e8a]">Getachew </span> <br></br>
           </h3>
