@@ -1,6 +1,13 @@
 import Card from "./Card";
 const Projects = () => {
   const projects = [
+     {
+      title: "crowdfund",
+      description:
+        "This project is a RESTful API for a crowdfunding application, designed for horizontal scalability and high performance. Built with Node.js and based on Express, MongoDB, Redis, JWT and BullMQ, it supports clustering and is fully containerized using Docker. The project also includes a CI/CD pipeline for seamless deployment and maintenance.",
+      techstack: ["Node.js", " Express.js", "MongoDB","Redis","Docker","Jest","Swagger","GitHub Actions"],
+      Githuburl: "https://github.com/bamlakugetachew1/kickstarterprod",
+    },
     {
       title: "airbnb",
       description:
@@ -45,14 +52,6 @@ const Projects = () => {
       ],
       liveurl: "https://letschatwithfreedom.netlify.app/",
       Githuburl: "https://github.com/bamlakugetachew1/chat",
-    },
-    {
-      title: "coinawesome",
-      description:
-        "This project is a web application that fetches live crypto data and transaction information using a public crypto API. It is built using React.js, a popular frontend framework known for its efficiency, flexibility, and ease of use. The application provides real-time updates of crypto data and transaction information.",
-      techstack: ["React js", "Tailwind Css", "Material UI","Axios","Crypto Api"],
-      liveurl: "https://coinawesome.netlify.app/",
-      Githuburl: "https://github.com/bamlakugetachew1/coin-awesome",
     },
   ];
   return (
