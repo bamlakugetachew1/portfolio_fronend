@@ -18,7 +18,7 @@ const Home = () => {
               className="text-2xl"
               strings={[
                 "I build robust backend systems",
-                "APIs that power web and mobile apps",
+                "APIs that power web and mobile",
                 "Let's Collaborate",
               ]}
               typeSpeed={150}
