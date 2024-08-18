@@ -14,12 +14,12 @@ const Home = () => {
             <span className="text-[#f37e8a]">Getachew </span> <br></br>
           </h3>
           <div className="movelefttright1">
-            <Typed
+        <Typed
               className="text-2xl"
               strings={[
-                "I build things for web",
-                "And Mobile ",
-                "Lets Get In Touch",
+                "I build robust backend systems",
+                "APIs that power web and mobile apps",
+                "Let's Collaborate",
               ]}
               typeSpeed={150}
               backSpeed={100}
