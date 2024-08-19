@@ -40,9 +40,8 @@ const Home = () => {
           </div>
           <div className="flex gap-3">
 
-
-  <a
-  href="../BamlakuGetachewResume.pdf" 
+    <a
+  href="/BamlakuGetachewResume.pdf" 
   download="BamlakuGetachewResume.pdf"
   target="_blank"
   rel="noopener noreferrer"
