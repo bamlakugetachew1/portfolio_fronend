@@ -39,19 +39,10 @@ const Home = () => {
             </a>
           </div>
           <div className="flex gap-3">
-            // <a
-            //   href={docx}
-            //   download="bamlaku_resume"
-            //   target="_blank"
-            //   rel="noopener noreferrer"
-            // >
-            //   <Button variant="outlined" endIcon={<DownloadIcon />}>
-            //     Resume
-            //   </Button>
-            // </a>
 
-              <a
-  href={pdfFile}  // Replace with the path to your PDF file
+
+  <a
+  href="../BamlakuGetachewResume.pdf" 
   download="BamlakuGetachewResume.pdf"
   target="_blank"
   rel="noopener noreferrer"
