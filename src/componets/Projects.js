@@ -20,7 +20,7 @@ const Projects = () => {
         "Material UI",
         "Tailwind Css",
       ],
-      liveurl: "https://cloneairbnbet.netlify.app/",
+      liveurl: "https://findhomeone.netlify.app/",
       Githuburl: "https://github.com/bamlakugetachew1/airbnbbackend",
     },
     {
