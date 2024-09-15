@@ -6,6 +6,7 @@ const Projects = () => {
       description:
         "This project is a RESTful API for a crowdfunding application, designed for horizontal scalability and high performance. Built with Node.js and based on Express, MongoDB, Redis, JWT and BullMQ, it supports clustering and is fully containerized using Docker. The project also includes a CI/CD pipeline for seamless deployment and maintenance.",
       techstack: ["Node.js", " Express.js", "MongoDB","Redis","Docker","Jest","Swagger","GitHub Actions"],
+      liveurl: "https://crowdprod.onrender.com/api-docs",
       Githuburl: "https://github.com/bamlakugetachew1/kickstarterprod",
     },
     {
